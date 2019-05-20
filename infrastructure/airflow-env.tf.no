@@ -1,0 +1,12 @@
+resource "google_composer_environment" "airflow" {
+  provider  = "google-beta"
+  name      = "${var.airflow_env["name"]}"
+  region    = "${var.project["region"]}"
+
+  config {
+    software_config {
+      image_version     = "${var.airflow_env["image_version"]}"
+      python_version    = "${var.airflow_env["python_version"]}"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,fixture_code,attendance
+31,2019-03-16,15:00:00,Bournemouth,BOU,Newcastle United,NEW,BOUNEW,10625
+31,2019-03-16,15:00:00,Burnley,BUR,Leicester City,LEI,BURLEI,20719
+31,2019-03-16,15:00:00,West Ham United,WHU,Huddersfield Town,HUD,WHUHUD,59931
+31,2019-03-17,14:15:00,Fulham,FUL,Liverpool,LIV,FULLIV,25043
+31,2019-03-17,16:30:00,Everton,EVE,Chelsea,CHE,EVECHE,39356

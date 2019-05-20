@@ -1,0 +1,74 @@
+{
+  "matchday": {
+    "schema": [
+      {
+        "name": "matchday",
+        "type": "INTEGER"
+      },
+      {
+        "name": "date",
+        "type": "DATE"
+      },
+      {
+        "name": "local_time",
+        "type": "TIME"
+      },
+      {
+        "name": "home_team",
+        "type": "STRING"
+      },
+      {
+        "name": "home_team_code",
+        "type": "STRING"
+      },
+      {
+        "name": "away_team",
+        "type": "STRING"
+      },
+      {
+        "name": "away_team_code",
+        "type": "STRING"
+      },
+      {
+        "name": "fixture_code",
+        "type": "STRING"
+      },
+      {
+        "name": "attendance",
+        "type": "INTEGER"
+      }
+    ]
+  },
+  "scorer": {
+    "schema": [
+      {
+        "name": "matchday",
+        "type": "INTEGER"
+      },
+      {
+        "name": "date",
+        "type": "DATE"
+      },
+      {
+        "name": "fixture_code",
+        "type": "STRING"
+      },
+      {
+        "name": "player",
+        "type": "STRING"
+      },
+      {
+        "name": "minute",
+        "type": "INTEGER"
+      },
+      {
+        "name": "extra_minute",
+        "type": "INTEGER"
+      },
+      {
+        "name": "scorer_team",
+        "type": "STRING"
+      }
+    ]
+  }
+}

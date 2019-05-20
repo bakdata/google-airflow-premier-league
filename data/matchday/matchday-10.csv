@@ -1,0 +1,11 @@
+matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,fixture_code,attendance
+10,2018-10-27,15:00:00,Brighton and Hove Albion,BHA,Wolverhampton Wanderers,WOL,BHAWOL,30654
+10,2018-10-27,15:00:00,Fulham,FUL,Bournemouth,BOU,FULBOU,25071
+10,2018-10-27,15:00:00,Liverpool,LIV,Cardiff City,CAR,LIVCAR,53373
+10,2018-10-27,15:00:00,Southampton,SOU,Newcastle United,NEW,SOUNEW,30736
+10,2018-10-27,15:00:00,Watford,WAT,Huddersfield Town,HUD,WATHUD,20457
+10,2018-10-27,17:30:00,Leicester City,LEI,West Ham United,WHU,LEIWHU,31848
+10,2018-10-28,13:30:00,Burnley,BUR,Chelsea,CHE,BURCHE,21430
+10,2018-10-28,13:30:00,Crystal Palace,CRY,Arsenal,ARS,CRYARS,25718
+10,2018-10-28,16:00:00,Manchester United,MUN,Everton,EVE,MUNEVE,74525
+10,2018-10-29,20:00:00,Tottenham Hotspur,TOT,Manchester City,MCI,TOTMCI,56854

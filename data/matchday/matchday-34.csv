@@ -1,0 +1,12 @@
+matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,fixture_code,attendance
+34,2019-04-12,20:00:00,Leicester City,LEI,Newcastle United,NEW,LEINEW,32108
+34,2019-04-13,12:30:00,Tottenham Hotspur,TOT,Huddersfield Town,HUD,TOTHUD,58308
+34,2019-04-13,15:00:00,Brighton and Hove Albion,BHA,Bournemouth,BOU,BHABOU,30460
+34,2019-04-13,15:00:00,Burnley,BUR,Cardiff City,CAR,BURCAR,21480
+34,2019-04-13,15:00:00,Fulham,FUL,Everton,EVE,FULEVE,24971
+34,2019-04-13,15:00:00,Southampton,SOU,Wolverhampton Wanderers,WOL,SOUWOL,31708
+34,2019-04-13,17:30:00,Manchester United,MUN,West Ham United,WHU,MUNWHU,74478
+34,2019-04-14,14:05:00,Crystal Palace,CRY,Manchester City,MCI,CRYMCI,25721
+34,2019-04-14,16:30:00,Liverpool,LIV,Chelsea,CHE,LIVCHE,53279
+34,2019-04-15,20:00:00,Watford,WAT,Arsenal,ARS,WATARS,20480
+34,2019-04-16,19:45:00,Brighton and Hove Albion,BHA,Cardiff City,CAR,BHACAR,30226

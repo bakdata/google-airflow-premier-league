@@ -1,0 +1,11 @@
+matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,fixture_code,attendance
+5,2018-09-15,12:30:00,Tottenham Hotspur,TOT,Liverpool,LIV,TOTLIV,80188
+5,2018-09-15,15:00:00,Bournemouth,BOU,Leicester City,LEI,BOULEI,10543
+5,2018-09-15,15:00:00,Chelsea,CHE,Cardiff City,CAR,CHECAR,40499
+5,2018-09-15,15:00:00,Huddersfield Town,HUD,Crystal Palace,CRY,HUDCRY,23696
+5,2018-09-15,15:00:00,Manchester City,MCI,Fulham,FUL,MCIFUL,53307
+5,2018-09-15,15:00:00,Newcastle United,NEW,Arsenal,ARS,NEWARS,52165
+5,2018-09-15,17:30:00,Watford,WAT,Manchester United,MUN,WATMUN,20537
+5,2018-09-16,13:30:00,Wolverhampton Wanderers,WOL,Burnley,BUR,WOLBUR,30406
+5,2018-09-16,16:00:00,Everton,EVE,West Ham United,WHU,EVEWHU,39161
+5,2018-09-17,20:00:00,Southampton,SOU,Brighton and Hove Albion,BHA,SOUBHA,28811
