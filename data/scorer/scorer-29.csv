@@ -1,4 +1,4 @@
-matchday,date,fixture_code,player,minute,extra_minute,scorer_team
+matchday,date,match,player,minute,extra_minute,scorer_team
 29,2019-03-02,BURCRY,Bardsley,15,,CRY
 29,2019-03-02,TOTARS,Ramsey,16,,ARS
 29,2019-03-02,WOLCAR,Jota,16,,WOL

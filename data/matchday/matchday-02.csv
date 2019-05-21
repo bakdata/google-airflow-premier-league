@@ -1,4 +1,4 @@
-matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,fixture_code,attendance
+matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 2,2018-08-18,12:30:00,Cardiff City,CAR,Newcastle United,NEW,CARNEW,30720
 2,2018-08-18,15:00:00,Everton,EVE,Southampton,SOU,EVESOU,38601
 2,2018-08-18,15:00:00,Leicester City,LEI,Wolverhampton Wanderers,WOL,LEIWOL,32043

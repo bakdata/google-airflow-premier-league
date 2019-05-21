@@ -1,4 +1,4 @@
-matchday,date,fixture_code,player,minute,extra_minute,scorer_team
+matchday,date,match,player,minute,extra_minute,scorer_team
 5,2018-09-15,CHECAR,Bamba,16,,CAR
 5,2018-09-15,BOULEI,Fraser,19,,BOU
 5,2018-09-15,MCIFUL,Sané,2,,MCI

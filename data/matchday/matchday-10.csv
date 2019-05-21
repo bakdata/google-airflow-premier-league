@@ -1,4 +1,4 @@
-matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,fixture_code,attendance
+matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 10,2018-10-27,15:00:00,Brighton and Hove Albion,BHA,Wolverhampton Wanderers,WOL,BHAWOL,30654
 10,2018-10-27,15:00:00,Fulham,FUL,Bournemouth,BOU,FULBOU,25071
 10,2018-10-27,15:00:00,Liverpool,LIV,Cardiff City,CAR,LIVCAR,53373

@@ -1,4 +1,4 @@
-matchday,date,fixture_code,player,minute,extra_minute,scorer_team
+matchday,date,match,player,minute,extra_minute,scorer_team
 21,2019-01-01,CARTOT,Eriksen,12,,TOT
 21,2019-01-01,ARSFUL,Xhaka,25,,ARS
 21,2019-01-01,CARTOT,Son,26,,TOT

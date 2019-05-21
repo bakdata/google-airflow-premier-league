@@ -1,4 +1,4 @@
-matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,fixture_code,attendance
+matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 11,2018-11-03,12:30:00,Bournemouth,BOU,Manchester United,MUN,BOUMUN,10792
 11,2018-11-03,15:00:00,Cardiff City,CAR,Leicester City,LEI,CARLEI,30877
 11,2018-11-03,15:00:00,Everton,EVE,Brighton and Hove Albion,BHA,EVEBHA,38966

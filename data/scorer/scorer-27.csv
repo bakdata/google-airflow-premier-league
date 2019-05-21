@@ -1,4 +1,4 @@
-matchday,date,fixture_code,player,minute,extra_minute,scorer_team
+matchday,date,match,player,minute,extra_minute,scorer_team
 27,2019-02-22,CARWAT,Deulofeu,18,,WAT
 27,2019-02-22,WHUFUL,Chicharito,29,,WHU
 27,2019-02-22,WHUFUL,Babel,3,,FUL

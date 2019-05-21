@@ -1,4 +1,4 @@
-matchday,date,fixture_code,player,minute,extra_minute,scorer_team
+matchday,date,match,player,minute,extra_minute,scorer_team
 34,2019-04-12,LEINEW,Pérez,32,,NEW
 34,2019-04-13,MUNWHU,Pogba,19,,MUN
 34,2019-04-13,SOUWOL,Redmond,2,,SOU

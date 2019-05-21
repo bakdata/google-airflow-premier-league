@@ -1,4 +1,4 @@
-matchday,date,fixture_code,player,minute,extra_minute,scorer_team
+matchday,date,match,player,minute,extra_minute,scorer_team
 2,2018-08-18,EVESOU,Walcott,15,,EVE
 2,2018-08-18,CHEARS,Morata,20,,CHE
 2,2018-08-18,LEIWOL,Doherty,29,,LEI

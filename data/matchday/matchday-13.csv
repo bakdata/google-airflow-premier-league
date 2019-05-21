@@ -1,4 +1,4 @@
-matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,fixture_code,attendance
+matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 13,2018-11-24,15:00:00,Brighton and Hove Albion,BHA,Leicester City,LEI,BHALEI,30553
 13,2018-11-24,15:00:00,Everton,EVE,Cardiff City,CAR,EVECAR,39139
 13,2018-11-24,15:00:00,Fulham,FUL,Southampton,SOU,FULSOU,24603

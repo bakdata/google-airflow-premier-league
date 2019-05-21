@@ -1,4 +1,4 @@
-matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,fixture_code,attendance
+matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 29,2019-03-02,12:30:00,Tottenham Hotspur,TOT,Arsenal,ARS,TOTARS,81332
 29,2019-03-02,15:00:00,Bournemouth,BOU,Manchester City,MCI,BOUMCI,10699
 29,2019-03-02,15:00:00,Brighton and Hove Albion,BHA,Huddersfield Town,HUD,BHAHUD,30182

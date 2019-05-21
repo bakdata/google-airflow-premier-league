@@ -1,4 +1,4 @@
-matchday,date,fixture_code,player,minute,extra_minute,scorer_team
+matchday,date,match,player,minute,extra_minute,scorer_team
 8,2018-10-05,BHAWHU,Murray,25,,BHA
 8,2018-10-06,MUNNEW,Mutō,10,,NEW
 8,2018-10-06,WATBOU,Brooks,14,,BOU

@@ -1,4 +1,4 @@
-matchday,date,fixture_code,player,minute,extra_minute,scorer_team
+matchday,date,match,player,minute,extra_minute,scorer_team
 11,2018-11-03,WHUBUR,Arnautović,10,,WHU
 11,2018-11-03,BOUMUN,Wilson,11,,BOU
 11,2018-11-03,EVEBHA,Richarlison,26,,EVE

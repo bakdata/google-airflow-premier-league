@@ -1,4 +1,4 @@
-matchday,date,fixture_code,player,minute,extra_minute,scorer_team
+matchday,date,match,player,minute,extra_minute,scorer_team
 35,2019-04-20,NEWSOU,Pérez,27,,NEW
 35,2019-04-20,NEWSOU,Pérez,31,,NEW
 35,2019-04-20,WHULEI,Antonio,37,,WHU

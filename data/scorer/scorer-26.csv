@@ -1,4 +1,4 @@
-matchday,date,fixture_code,player,minute,extra_minute,scorer_team
+matchday,date,match,player,minute,extra_minute,scorer_team
 26,2019-02-09,FULMUN,Pogba,14,,MUN
 26,2019-02-09,HUDARS,Iwobi,16,,ARS
 26,2019-02-09,FULMUN,Martial,23,,MUN

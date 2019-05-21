@@ -1,4 +1,4 @@
-matchday,date,fixture_code,player,minute,extra_minute,scorer_team
+matchday,date,match,player,minute,extra_minute,scorer_team
 4,2018-09-01,LEILIV,Mané,10,,LIV
 4,2018-09-01,MCINEW,Yedlin,30,,NEW
 4,2018-09-01,EVEHUD,Billing,34,,HUD

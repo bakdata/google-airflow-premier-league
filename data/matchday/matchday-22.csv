@@ -1,4 +1,4 @@
-matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,fixture_code,attendance
+matchday,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 22,2019-01-12,12:30:00,West Ham United,WHU,Arsenal,ARS,WHUARS,59946
 22,2019-01-12,15:00:00,Brighton and Hove Albion,BHA,Liverpool,LIV,BHALIV,30682
 22,2019-01-12,15:00:00,Burnley,BUR,Fulham,FUL,BURFUL,19316
