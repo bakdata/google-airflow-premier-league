@@ -6,6 +6,12 @@ We load the data daily in [Google Cloud Storage](https://console.cloud.google.co
 The ETL job then starts automatically and imports the data into BigQuery to analyze the English Premier League data.
 
 ## Requirements
+
+### Software
+ * [Docker](https://docs.docker.com/v17.12/install/)
+ * [Docker-Compose](https://docs.docker.com/compose/install/#install-compose)
+ * [Google Cloud SDK](https://cloud.google.com/sdk/install)
+ * [Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html)
  
 ### [Google Cloud](https://console.cloud.google.com)
  * create Google Cloud Project
@@ -39,17 +45,17 @@ Connections:
 ```
 
 ## Local Deployment
- * Generate a Fernet Key:
+ * Generate a Fernet Key (optional):
 ```bash
 pip install cryptography && \
 export AIRFLOW_FERNET_KEY=$(python -c "from cryptography.fernet import Fernet; FERNET_KEY = Fernet.generate_key().decode(); print(FERNET_KEY))"
 ```
 More about that [here](https://airflow.readthedocs.io/en/stable/howto/secure-connections.html)
 
-
 Then run `docker-compose up`
 
 Airflow will be available via http://localhost:8080
+Monitoring via Flower http://localhost:5555
 
 After Container is started run `bash scripts/init_airflow.sh` for initialize [Connections](http://localhost:8080/admin/connection/) and [Variables](http://localhost:8080/admin/variable/)
 
