@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 
 from airflow import DAG
 from airflow.contrib.sensors.gcs_sensor import GoogleCloudStoragePrefixSensor
+from airflow.models import Variable
 from airflow.operators.dagrun_operator import TriggerDagRunOperator
 
 from util.gc_tasks import gc_tasks
@@ -28,7 +29,8 @@ def create_dag(dag_id, default_args):
     return dag
 
 
-description = open('./dags/description.json', 'r').read()
+airflow_home = Variable.get("airflow_home")
+description = open(f'{airflow_home}/dags/description.json', 'r').read()
 for key, values in json.loads(description).items():
     default_args = {
         "owner": "bakdata",
@@ -40,6 +42,6 @@ for key, values in json.loads(description).items():
         "retry_delay": timedelta(minutes=5),
     }
 
-    dag_id = f"{key}_data_gc"
+    dag_id = f"{key}_data_to_gc"
 
     globals()[dag_id] = create_dag(dag_id, default_args)
