@@ -10,5 +10,7 @@ docker-compose run --rm webserver airflow variables -s bq_dataset_view view && \
 docker-compose run --rm webserver airflow variables -s gc_project_id $GC_PROJECT_ID && \
 docker-compose run --rm webserver airflow variables -s gcs_bucket english_premier_league && \
 docker-compose run --rm webserver airflow variables -s airflow_home /usr/local/airflow && \
+docker-compose run --rm webserver airflow connections -d --conn_id=bigquery_default && \
 docker-compose run --rm webserver airflow connections -a --conn_id=bigquery_default --conn_type=google_cloud_platform --conn_extra "'$CONNECTION_GOOGLE_EXTRAS'" && \
+docker-compose run --rm webserver airflow connections -d --conn_id=google_cloud_default && \
 docker-compose run --rm webserver airflow connections -a --conn_id=google_cloud_default --conn_type=google_cloud_platform --conn_extra "'$CONNECTION_GOOGLE_EXTRAS'"
