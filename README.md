@@ -66,8 +66,8 @@ More about that [here](https://cloud.google.com/composer/docs/concepts)
 
 ## Development
 To set up a local development environment install pipenv:
-`pipenv install --skip-lock`
+`pipenv install`
 
-Then install run `SLUGIFY_USES_TEXT_UNIDECODE=yes pipenv install --skip-lock`
+Then install run `SLUGIFY_USES_TEXT_UNIDECODE=yes pipenv install`
 
 Open the folder with PyCharm and mark both `dags/` and `plugins/` as source folders.
