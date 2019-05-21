@@ -4,7 +4,15 @@ which gcloud
 
 if [ $? -eq 1 ]
 then
-  echo "gcloud not installed" >&2
+  echo "gcloud not installed"
+  exit 1
+fi
+
+which terraform
+
+if [ $? -eq 1 ]
+then
+  echo "terraform not installed"
   exit 1
 fi
 
