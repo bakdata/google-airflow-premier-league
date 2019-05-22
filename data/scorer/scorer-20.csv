@@ -1,4 +1,4 @@
-matchday,date,match,player,minute,extra_minute,scorer_team
+matchweek,date,match,player,minute,extra_minute,scorer_team
 20,2018-12-29,LIVARS,Maitland-Niles,11,,ARS
 20,2018-12-29,LIVARS,Firmino,14,,LIV
 20,2018-12-29,LIVARS,Firmino,16,,LIV

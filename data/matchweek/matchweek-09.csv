@@ -1,0 +1,11 @@
+matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+9,2018-10-20,12:30:00,Chelsea,CHE,Manchester United,MUN,CHEMUN,40721
+9,2018-10-20,15:00:00,Bournemouth,BOU,Southampton,SOU,BOUSOU,10986
+9,2018-10-20,15:00:00,Cardiff City,CAR,Fulham,FUL,CARFUL,29681
+9,2018-10-20,15:00:00,Manchester City,MCI,Burnley,BUR,MCIBUR,54094
+9,2018-10-20,15:00:00,Newcastle United,NEW,Brighton and Hove Albion,BHA,NEWBHA,50329
+9,2018-10-20,15:00:00,West Ham United,WHU,Tottenham Hotspur,TOT,WHUTOT,56921
+9,2018-10-20,15:00:00,Wolverhampton Wanderers,WOL,Watford,WAT,WOLWAT,31144
+9,2018-10-20,17:30:00,Huddersfield Town,HUD,Liverpool,LIV,HUDLIV,24263
+9,2018-10-21,16:00:00,Everton,EVE,Crystal Palace,CRY,EVECRY,38668
+9,2018-10-22,20:00:00,Arsenal,ARS,Leicester City,LEI,ARSLEI,59886

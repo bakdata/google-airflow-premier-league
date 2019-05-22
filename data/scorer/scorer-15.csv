@@ -1,4 +1,4 @@
-matchday,date,match,player,minute,extra_minute,scorer_team
+matchweek,date,match,player,minute,extra_minute,scorer_team
 15,2018-12-04,BOUHUD,Fraser,22,,BOU
 15,2018-12-04,BHACRY,Murray,24,,BHA
 15,2018-12-04,BHACRY,Balogun,31,,BHA

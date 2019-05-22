@@ -4,10 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-apache-airflow = {extras = ['google-api-python-client', 'crypto'], version = ">=1.10.3"}
-pandas-gbq = ">=0.9.0"
-#Jinja2 = "==2.10.1"
-#SQLAlchemy = ">=1.3.0"
+apache-airflow = {extras = ['google-api-python-client', 'crypto'], version = ">=1.10.2"}
 
 [dev-packages]
 

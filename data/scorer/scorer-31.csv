@@ -1,4 +1,4 @@
-matchday,date,match,player,minute,extra_minute,scorer_team
+matchweek,date,match,player,minute,extra_minute,scorer_team
 31,2019-03-16,WHUHUD,Noble,15,,WHU
 31,2019-03-16,WHUHUD,Bacuna,17,,HUD
 31,2019-03-16,WHUHUD,Grant,30,,HUD

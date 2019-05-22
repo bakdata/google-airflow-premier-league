@@ -1,0 +1,11 @@
+matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+28,2019-02-26,19:45:00,Cardiff City,CAR,Everton,EVE,CAREVE,31849
+28,2019-02-26,19:45:00,Huddersfield Town,HUD,Wolverhampton Wanderers,WOL,HUDWOL,22714
+28,2019-02-26,19:45:00,Leicester City,LEI,Brighton and Hove Albion,BHA,LEIBHA,30558
+28,2019-02-26,20:00:00,Newcastle United,NEW,Burnley,BUR,NEWBUR,48323
+28,2019-02-27,19:45:00,Arsenal,ARS,Bournemouth,BOU,ARSBOU,59618
+28,2019-02-27,19:45:00,Southampton,SOU,Fulham,FUL,SOUFUL,27597
+28,2019-02-27,20:00:00,Chelsea,CHE,Tottenham Hotspur,TOT,CHETOT,40542
+28,2019-02-27,20:00:00,Crystal Palace,CRY,Manchester United,MUN,CRYMUN,25754
+28,2019-02-27,20:00:00,Liverpool,LIV,Watford,WAT,LIVWAT,53316
+28,2019-02-27,20:00:00,Manchester City,MCI,West Ham United,WHU,MCIWHU,53528

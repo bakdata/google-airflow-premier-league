@@ -1,0 +1,11 @@
+matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+22,2019-01-12,12:30:00,West Ham United,WHU,Arsenal,ARS,WHUARS,59946
+22,2019-01-12,15:00:00,Brighton and Hove Albion,BHA,Liverpool,LIV,BHALIV,30682
+22,2019-01-12,15:00:00,Burnley,BUR,Fulham,FUL,BURFUL,19316
+22,2019-01-12,15:00:00,Cardiff City,CAR,Huddersfield Town,HUD,CARHUD,30725
+22,2019-01-12,15:00:00,Crystal Palace,CRY,Watford,WAT,CRYWAT,25010
+22,2019-01-12,15:00:00,Leicester City,LEI,Southampton,SOU,LEISOU,31491
+22,2019-01-12,17:30:00,Chelsea,CHE,Newcastle United,NEW,CHENEW,40491
+22,2019-01-13,14:15:00,Everton,EVE,Bournemouth,BOU,EVEBOU,38113
+22,2019-01-13,16:30:00,Tottenham Hotspur,TOT,Manchester United,MUN,TOTMUN,80062
+22,2019-01-14,20:00:00,Manchester City,MCI,Wolverhampton Wanderers,WOL,MCIWOL,54171

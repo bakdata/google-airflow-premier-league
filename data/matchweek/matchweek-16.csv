@@ -1,0 +1,11 @@
+matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+16,2018-12-08,12:30:00,Bournemouth,BOU,Liverpool,LIV,BOULIV,10752
+16,2018-12-08,15:00:00,Arsenal,ARS,Huddersfield Town,HUD,ARSHUD,59893
+16,2018-12-08,15:00:00,Burnley,BUR,Brighton and Hove Albion,BHA,BURBHA,18497
+16,2018-12-08,15:00:00,Cardiff City,CAR,Southampton,SOU,CARSOU,30067
+16,2018-12-08,15:00:00,Manchester United,MUN,Fulham,FUL,MUNFUL,74523
+16,2018-12-08,15:00:00,West Ham United,WHU,Crystal Palace,CRY,WHUCRY,56995
+16,2018-12-08,17:30:00,Chelsea,CHE,Manchester City,MCI,CHEMCI,40571
+16,2018-12-08,19:45:00,Leicester City,LEI,Tottenham Hotspur,TOT,LEITOT,31957
+16,2018-12-09,16:00:00,Newcastle United,NEW,Wolverhampton Wanderers,WOL,NEWWOL,50223
+16,2018-12-10,20:00:00,Everton,EVE,Watford,WAT,EVEWAT,38400

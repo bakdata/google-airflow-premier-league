@@ -1,0 +1,11 @@
+matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+3,2018-08-25,12:30:00,Wolverhampton Wanderers,WOL,Manchester City,MCI,WOLMCI,31322
+3,2018-08-25,15:00:00,Arsenal,ARS,West Ham United,WHU,ARSWHU,59830
+3,2018-08-25,15:00:00,Bournemouth,BOU,Everton,EVE,BOUEVE,10654
+3,2018-08-25,15:00:00,Huddersfield Town,HUD,Cardiff City,CAR,HUDCAR,21193
+3,2018-08-25,15:00:00,Southampton,SOU,Leicester City,LEI,SOULEI,29925
+3,2018-08-25,17:30:00,Liverpool,LIV,Brighton and Hove Albion,BHA,LIVBHA,53294
+3,2018-08-26,13:30:00,Watford,WAT,Crystal Palace,CRY,WATCRY,20014
+3,2018-08-26,16:00:00,Fulham,FUL,Burnley,BUR,FULBUR,23438
+3,2018-08-26,16:00:00,Newcastle United,NEW,Chelsea,CHE,NEWCHE,51790
+3,2018-08-27,20:00:00,Manchester United,MUN,Tottenham Hotspur,TOT,MUNTOT,74400
