@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-apache-airflow = {extras = ['google-api-python-client', 'crypto'], version = ">=1.10.1"}
+apache-airflow = {extras = ['google-api-python-client', 'crypto'], version = ">=1.10.2"}
 
 [dev-packages]
 
