@@ -1,4 +1,4 @@
-matchday,date,match,player,minute,extra_minute,scorer_team
+matchweek,date,match,player,minute,extra_minute,scorer_team
 30,2019-03-09,NEWEVE,Calvert-Lewin,18,,EVE
 30,2019-03-09,CRYBHA,Murray,19,,BHA
 30,2019-03-09,HUDBOU,Wilson,20,,BOU

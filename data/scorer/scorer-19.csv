@@ -1,4 +1,4 @@
-matchday,date,match,player,minute,extra_minute,scorer_team
+matchweek,date,match,player,minute,extra_minute,scorer_team
 19,2018-12-26,LIVNEW,Lovren,11,,LIV
 19,2018-12-26,BUREVE,Digne,13,,EVE
 19,2018-12-26,LEIMCI,B.Silva,14,,MCI

@@ -1,4 +1,4 @@
-matchday,date,match,player,minute,extra_minute,scorer_team
+matchweek,date,match,player,minute,extra_minute,scorer_team
 9,2018-10-20,CARFUL,Schürrle,11,,FUL
 9,2018-10-20,CARFUL,Murphy,15,,CAR
 9,2018-10-20,MCIBUR,Agüero,17,,MCI

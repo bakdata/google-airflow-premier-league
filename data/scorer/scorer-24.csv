@@ -1,4 +1,4 @@
-matchday,date,match,player,minute,extra_minute,scorer_team
+matchweek,date,match,player,minute,extra_minute,scorer_team
 24,2019-01-29,NEWMCI,Agüero,1,,MCI
 24,2019-01-29,FULBHA,Murray,17,,BHA
 24,2019-01-29,FULBHA,Murray,3,,BHA

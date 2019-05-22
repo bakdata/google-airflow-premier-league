@@ -1,4 +1,4 @@
-matchday,date,match,player,minute,extra_minute,scorer_team
+matchweek,date,match,player,minute,extra_minute,scorer_team
 23,2019-01-19,WOLLEI,Bennett,12,,WOL
 23,2019-01-19,ARSCHE,Lacazette,14,,ARS
 23,2019-01-19,NEWCAR,Schär,24,,NEW

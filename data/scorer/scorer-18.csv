@@ -1,4 +1,4 @@
-matchday,date,match,player,minute,extra_minute,scorer_team
+matchweek,date,match,player,minute,extra_minute,scorer_team
 18,2018-12-21,WOLLIV,Salah,18,,LIV
 18,2018-12-21,WOLLIV,van Dijk,68,,LIV
 18,2018-12-22,CARMUN,Martial,11,,MUN
