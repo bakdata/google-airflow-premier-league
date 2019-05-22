@@ -11,13 +11,9 @@ services:
       - POSTGRES_USER=airflow
       - POSTGRES_PASSWORD=airflow
       - POSTGRES_DB=airflow
-    volumes:
-      - ./postgres_data:/var/lib/postgresql/data
-    ports:
-      - 5432:5432
 
   webserver:
-    image: airflow:latest
+    image: airflow:1.10.2
     restart: always
     build: .
     depends_on:
@@ -47,7 +43,7 @@ services:
       retries: 3
 
   flower:
-    image: airflow:latest
+    image: airflow:1.10.2
     restart: always
     depends_on:
       - redis
@@ -66,7 +62,7 @@ services:
     command: flower
 
   scheduler:
-    image: airflow:latest
+    image: airflow:1.10.2
     restart: always
     depends_on:
       - webserver
@@ -87,7 +83,7 @@ services:
     command: scheduler
 
   worker:
-    image: airflow:latest
+    image: airflow:1.10.2
     restart: always
     depends_on:
       - webserver
