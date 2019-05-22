@@ -1,0 +1,11 @@
+matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+26,2019-02-09,12:30:00,Fulham,FUL,Manchester United,MUN,FULMUN,25001
+26,2019-02-09,15:00:00,Crystal Palace,CRY,West Ham United,WHU,CRYWHU,25552
+26,2019-02-09,15:00:00,Huddersfield Town,HUD,Arsenal,ARS,HUDARS,24182
+26,2019-02-09,15:00:00,Liverpool,LIV,Bournemouth,BOU,LIVBOU,53178
+26,2019-02-09,15:00:00,Southampton,SOU,Cardiff City,CAR,SOUCAR,31438
+26,2019-02-09,15:00:00,Watford,WAT,Everton,EVE,WATEVE,20333
+26,2019-02-09,17:30:00,Brighton and Hove Albion,BHA,Burnley,BUR,BHABUR,29323
+26,2019-02-10,13:30:00,Tottenham Hotspur,TOT,Leicester City,LEI,TOTLEI,44154
+26,2019-02-10,16:00:00,Manchester City,MCI,Chelsea,CHE,MCICHE,54452
+26,2019-02-11,20:00:00,Wolverhampton Wanderers,WOL,Newcastle United,NEW,WOLNEW,30687

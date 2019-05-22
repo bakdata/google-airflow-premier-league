@@ -1,0 +1,11 @@
+matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+7,2018-09-29,12:30:00,West Ham United,WHU,Manchester United,MUN,WHUMUN,56938
+7,2018-09-29,15:00:00,Arsenal,ARS,Watford,WAT,ARSWAT,60019
+7,2018-09-29,15:00:00,Everton,EVE,Fulham,FUL,EVEFUL,38788
+7,2018-09-29,15:00:00,Huddersfield Town,HUD,Tottenham Hotspur,TOT,HUDTOT,23885
+7,2018-09-29,15:00:00,Manchester City,MCI,Brighton and Hove Albion,BHA,MCIBHA,54152
+7,2018-09-29,15:00:00,Newcastle United,NEW,Leicester City,LEI,NEWLEI,51523
+7,2018-09-29,15:00:00,Wolverhampton Wanderers,WOL,Southampton,SOU,WOLSOU,31147
+7,2018-09-29,17:30:00,Chelsea,CHE,Liverpool,LIV,CHELIV,40625
+7,2018-09-30,16:00:00,Cardiff City,CAR,Burnley,BUR,CARBUR,30411
+7,2018-10-01,20:00:00,Bournemouth,BOU,Crystal Palace,CRY,BOUCRY,10199

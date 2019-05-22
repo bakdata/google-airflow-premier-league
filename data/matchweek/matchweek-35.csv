@@ -1,0 +1,15 @@
+matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+35,2019-04-20,12:30:00,Manchester City,MCI,Tottenham Hotspur,TOT,MCITOT,54489
+35,2019-04-20,15:00:00,Bournemouth,BOU,Fulham,FUL,BOUFUL,10511
+35,2019-04-20,15:00:00,Huddersfield Town,HUD,Watford,WAT,HUDWAT,23957
+35,2019-04-20,15:00:00,West Ham United,WHU,Leicester City,LEI,WHULEI,59960
+35,2019-04-20,15:00:00,Wolverhampton Wanderers,WOL,Brighton and Hove Albion,BHA,WOLBHA,31096
+35,2019-04-20,17:30:00,Newcastle United,NEW,Southampton,SOU,NEWSOU,52191
+35,2019-04-21,13:30:00,Everton,EVE,Manchester United,MUN,EVEMUN,0
+35,2019-04-21,16:00:00,Arsenal,ARS,Crystal Palace,CRY,ARSCRY,0
+35,2019-04-21,16:00:00,Cardiff City,CAR,Liverpool,LIV,CARLIV,0
+35,2019-04-22,20:00:00,Chelsea,CHE,Burnley,BUR,CHEBUR,0
+35,2019-04-23,19:45:00,Tottenham Hotspur,TOT,Brighton and Hove Albion,BHA,TOTBHA,0
+35,2019-04-23,19:45:00,Watford,WAT,Southampton,SOU,WATSOU,0
+35,2019-04-24,19:45:00,Wolverhampton Wanderers,WOL,Arsenal,ARS,WOLARS,0
+35,2019-04-24,20:00:00,Manchester United,MUN,Manchester City,MCI,MUNMCI,0
