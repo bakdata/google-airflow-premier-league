@@ -10,6 +10,8 @@
 ### Accessing a Cloud Composer environment requires the kubernetes commandline client [kubectl].
 # gcloud components install kubectl
 
+pushd $( dirname "${BASH_SOURCE[0]}" ) >/dev/null 2>&1
+
 if ! [ -x "$(command -v gcloud)" ]; then
   echo 'Error: gcloud is not installed. After install (https://cloud.google.com/sdk/docs/quickstart-linux) open new shell.' >&2
   exit 1
@@ -172,3 +174,5 @@ gsutil -m cp -r ../google_deploy/* ${BUCKET_NAME}
 
 ### detroy project
 #gcloud projects delete ${GC_PROJECT_ID}
+
+popd >/dev/null 2>&1
