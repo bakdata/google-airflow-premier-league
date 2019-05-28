@@ -60,6 +60,13 @@ Monitoring via Flower http://localhost:5555
 After Container is started run `bash scripts/init_airflow.sh` for initialize [Connections](http://localhost:8080/admin/connection/) and [Variables](http://localhost:8080/admin/variable/)
 
 ## [Google Deployment](https://cloud.google.com/composer/docs/quickstart)
+
+### Prerequisites
+
+The `google_init.sh` script which sets up a new GCP project, Cloud Composer- and BigQuery environment, and deploys this workflow, makes use of [jq](https://stedolan.github.io/jq/), a lightweight terminal application for json parsing and manipulation.
+Most Linux distributions ship with it, but if you're running a Mac and don't want to set up a Linux VM, you can install it using `brew` (`brew install jq`) or refer to the [official docs](https://stedolan.github.io/jq/download/) for the latest binary.
+
+
  * create environment on [Google Cloud Composer](https://console.cloud.google.com/composer/environments/create)
     * set Name, Node count (3) and the Location
     * finally choice Image (latest) and Python version (3)
