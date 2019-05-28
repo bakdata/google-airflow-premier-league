@@ -91,7 +91,6 @@ gsutil -m cp ../data/scorer/* gs://${GC_PROJECT_ID} && \
 
 ### create environment airflow
 echo "create airflow environment ..." && \
-#gcloud beta composer environments delete -q ${GC_PROJECT_ID} --project=${GC_PROJECT_ID} --location=${LOCATION} && \
 gcloud beta composer environments create ${GC_PROJECT_ID} \
 	--project=${GC_PROJECT_ID} \
 	--location=${LOCATION} \
