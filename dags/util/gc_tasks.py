@@ -18,8 +18,8 @@ def _create_merge_sql(source, target, schema, **context):
 
 
 def gc_tasks(name, schema, next_task=DummyOperator(task_id="Done")):
-    bq_staging = "{{{{ var.value.gc_project_id }}}}.{{{{ var.value.bq_dataset_source }}}}.{0}".format(name)
-    bq_warehouse = "{{{{ var.value.gc_project_id }}}}.{{{{ var.value.bq_dataset_target }}}}.{0}".format(name)
+    bq_staging = f"{{{{ var.value.gc_project_id }}}}.{{{{ var.value.bq_dataset_source }}}}.{name}"
+    bq_warehouse = f"{{{{ var.value.gc_project_id }}}}.{{{{ var.value.bq_dataset_target }}}}.{name}"
 
     t1 = GoogleCloudStorageToBigQueryOperator(
         task_id=f"staging_{name}",
