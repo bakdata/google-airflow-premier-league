@@ -1,4 +1,4 @@
-matchweek,date,match,player,minute,extra_minute,scorer_team
+week,date,match,player,minute,extra_minute,scorer_team
 3,2018-08-25,LIVBHA,Salah,23,,LIV
 3,2018-08-25,ARSWHU,Arnautović,25,,WHU
 3,2018-08-25,ARSWHU,Monreal,30,,ARS

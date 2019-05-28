@@ -2,7 +2,7 @@
   "matchweek": {
     "schema": [
       {
-        "name": "matchday",
+        "name": "week",
         "type": "INTEGER"
       },
       {
@@ -37,12 +37,13 @@
         "name": "attendance",
         "type": "INTEGER"
       }
-    ]
+    ],
+    "ext_schema": [{"name": "cdc_hash", "type": "STRING"}, {"name": "inserted_at", "type": "DATETIME"}]
   },
   "scorer": {
     "schema": [
       {
-        "name": "matchday",
+        "name": "week",
         "type": "INTEGER"
       },
       {
@@ -69,6 +70,7 @@
         "name": "scorer_team",
         "type": "STRING"
       }
-    ]
+    ],
+    "ext_schema": [{"name": "cdc_hash", "type": "STRING"}, {"name": "inserted_at", "type": "DATETIME"}]
   }
 }

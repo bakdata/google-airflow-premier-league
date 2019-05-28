@@ -1,4 +1,4 @@
-matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+week,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 34,2019-04-12,20:00:00,Leicester City,LEI,Newcastle United,NEW,LEINEW,32108
 34,2019-04-13,12:30:00,Tottenham Hotspur,TOT,Huddersfield Town,HUD,TOTHUD,58308
 34,2019-04-13,15:00:00,Brighton and Hove Albion,BHA,Bournemouth,BOU,BHABOU,30460

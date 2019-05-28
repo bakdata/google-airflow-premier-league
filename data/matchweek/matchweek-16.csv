@@ -1,4 +1,4 @@
-matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+week,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 16,2018-12-08,12:30:00,Bournemouth,BOU,Liverpool,LIV,BOULIV,10752
 16,2018-12-08,15:00:00,Arsenal,ARS,Huddersfield Town,HUD,ARSHUD,59893
 16,2018-12-08,15:00:00,Burnley,BUR,Brighton and Hove Albion,BHA,BURBHA,18497

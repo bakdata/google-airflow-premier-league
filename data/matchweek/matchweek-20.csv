@@ -1,4 +1,4 @@
-matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+week,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 20,2018-12-29,15:00:00,Brighton and Hove Albion,BHA,Everton,EVE,BHAEVE,30597
 20,2018-12-29,15:00:00,Fulham,FUL,Huddersfield Town,HUD,FULHUD,24423
 20,2018-12-29,15:00:00,Leicester City,LEI,Cardiff City,CAR,LEICAR,32047

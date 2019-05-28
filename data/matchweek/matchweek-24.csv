@@ -1,4 +1,4 @@
-matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+week,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 24,2019-01-29,19:45:00,Arsenal,ARS,Cardiff City,CAR,ARSCAR,59933
 24,2019-01-29,19:45:00,Fulham,FUL,Brighton and Hove Albion,BHA,FULBHA,22008
 24,2019-01-29,19:45:00,Huddersfield Town,HUD,Everton,EVE,HUDEVE,23699

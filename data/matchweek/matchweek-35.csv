@@ -1,4 +1,4 @@
-matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+week,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 35,2019-04-20,12:30:00,Manchester City,MCI,Tottenham Hotspur,TOT,MCITOT,54489
 35,2019-04-20,15:00:00,Bournemouth,BOU,Fulham,FUL,BOUFUL,10511
 35,2019-04-20,15:00:00,Huddersfield Town,HUD,Watford,WAT,HUDWAT,23957

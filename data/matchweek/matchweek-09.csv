@@ -1,4 +1,4 @@
-matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+week,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 9,2018-10-20,12:30:00,Chelsea,CHE,Manchester United,MUN,CHEMUN,40721
 9,2018-10-20,15:00:00,Bournemouth,BOU,Southampton,SOU,BOUSOU,10986
 9,2018-10-20,15:00:00,Cardiff City,CAR,Fulham,FUL,CARFUL,29681

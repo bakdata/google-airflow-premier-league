@@ -1,4 +1,4 @@
-matchweek,date,match,player,minute,extra_minute,scorer_team
+week,date,match,player,minute,extra_minute,scorer_team
 6,2018-09-22,LIVSOU,Hoedt,10,,LIV
 6,2018-09-22,MUNWOL,Fred,18,,MUN
 6,2018-09-22,LEIHUD,Iheanacho,19,,LEI

@@ -1,4 +1,4 @@
-matchweek,date,match,player,minute,extra_minute,scorer_team
+week,date,match,player,minute,extra_minute,scorer_team
 25,2019-02-02,CHEHUD,Higuaín,16,,CHE
 25,2019-02-02,CRYFUL,Milivojević,25,,CRY
 25,2019-02-02,EVEWOL,Gomes,27,,EVE

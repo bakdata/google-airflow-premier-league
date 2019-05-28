@@ -1,4 +1,4 @@
-matchweek,date,match,player,minute,extra_minute,scorer_team
+week,date,match,player,minute,extra_minute,scorer_team
 10,2018-10-27,LIVCAR,Salah,10,,LIV
 10,2018-10-27,WATHUD,Pereyra,10,,WAT
 10,2018-10-27,FULBOU,Wilson,14,,BOU

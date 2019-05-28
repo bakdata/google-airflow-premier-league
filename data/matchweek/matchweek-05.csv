@@ -1,4 +1,4 @@
-matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+week,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 5,2018-09-15,12:30:00,Tottenham Hotspur,TOT,Liverpool,LIV,TOTLIV,80188
 5,2018-09-15,15:00:00,Bournemouth,BOU,Leicester City,LEI,BOULEI,10543
 5,2018-09-15,15:00:00,Chelsea,CHE,Cardiff City,CAR,CHECAR,40499

@@ -1,4 +1,4 @@
-matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+week,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 19,2018-12-26,12:30:00,Fulham,FUL,Wolverhampton Wanderers,WOL,FULWOL,24382
 19,2018-12-26,15:00:00,Burnley,BUR,Everton,EVE,BUREVE,21484
 19,2018-12-26,15:00:00,Crystal Palace,CRY,Cardiff City,CAR,CRYCAR,25206

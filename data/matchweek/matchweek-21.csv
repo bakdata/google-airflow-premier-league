@@ -1,4 +1,4 @@
-matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+week,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 21,2019-01-01,12:30:00,Everton,EVE,Leicester City,LEI,EVELEI,39052
 21,2019-01-01,15:00:00,Arsenal,ARS,Fulham,FUL,ARSFUL,59887
 21,2019-01-01,15:00:00,Cardiff City,CAR,Tottenham Hotspur,TOT,CARTOT,32485

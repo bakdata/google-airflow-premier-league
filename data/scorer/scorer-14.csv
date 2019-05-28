@@ -1,4 +1,4 @@
-matchweek,date,match,player,minute,extra_minute,scorer_team
+week,date,match,player,minute,extra_minute,scorer_team
 14,2018-11-30,CARWOL,Doherty,18,,WOL
 14,2018-11-30,CARWOL,Gunnarsson,65,,CAR
 14,2018-11-30,CARWOL,Hoilett,77,,CAR

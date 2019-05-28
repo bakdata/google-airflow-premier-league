@@ -1,4 +1,4 @@
-matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+week,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 23,2019-01-19,12:30:00,Wolverhampton Wanderers,WOL,Leicester City,LEI,WOLLEI,31278
 23,2019-01-19,15:00:00,Bournemouth,BOU,West Ham United,WHU,BOUWHU,10495
 23,2019-01-19,15:00:00,Liverpool,LIV,Crystal Palace,CRY,LIVCRY,53171

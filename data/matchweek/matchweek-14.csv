@@ -1,4 +1,4 @@
-matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+week,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 14,2018-11-30,20:00:00,Cardiff City,CAR,Wolverhampton Wanderers,WOL,CARWOL,30213
 14,2018-12-01,15:00:00,Crystal Palace,CRY,Burnley,BUR,CRYBUR,25098
 14,2018-12-01,15:00:00,Huddersfield Town,HUD,Brighton and Hove Albion,BHA,HUDBHA,22973

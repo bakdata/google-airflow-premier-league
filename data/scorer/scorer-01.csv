@@ -1,4 +1,4 @@
-matchweek,date,match,player,minute,extra_minute,scorer_team
+week,date,match,player,minute,extra_minute,scorer_team
 1,2018-08-10,MUNLEI,Pogba,3,,MUN
 1,2018-08-10,MUNLEI,Shaw,83,,MUN
 1,2018-08-10,MUNLEI,Vardy,90,2,LEI

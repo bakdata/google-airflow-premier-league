@@ -1,4 +1,4 @@
-matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+week,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 32,2019-03-30,12:30:00,Fulham,FUL,Manchester City,MCI,FULMCI,25001
 32,2019-03-30,15:00:00,Brighton and Hove Albion,BHA,Southampton,SOU,BHASOU,30636
 32,2019-03-30,15:00:00,Burnley,BUR,Wolverhampton Wanderers,WOL,BURWOL,20990

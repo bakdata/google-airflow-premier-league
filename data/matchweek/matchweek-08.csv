@@ -1,4 +1,4 @@
-matchweek,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+week,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
 8,2018-10-05,20:00:00,Brighton and Hove Albion,BHA,West Ham United,WHU,BHAWHU,30544
 8,2018-10-06,15:00:00,Burnley,BUR,Huddersfield Town,HUD,BURHUD,20533
 8,2018-10-06,15:00:00,Crystal Palace,CRY,Wolverhampton Wanderers,WOL,CRYWOL,25715

@@ -1,4 +1,4 @@
-matchweek,date,match,player,minute,extra_minute,scorer_team
+week,date,match,player,minute,extra_minute,scorer_team
 22,2019-01-12,LEISOU,Ward-Prowse,11,,SOU
 22,2019-01-12,BURFUL,Schürrle,2,,FUL
 22,2019-01-12,BURFUL,Bryan,20,,BUR

@@ -1,4 +1,4 @@
-matchweek,date,match,player,minute,extra_minute,scorer_team
+week,date,match,player,minute,extra_minute,scorer_team
 17,2018-12-15,WOLBUR,Jiménez,12,,WOL
 17,2018-12-15,WATCAR,Deulofeu,16,,WAT
 17,2018-12-15,FULWHU,Snodgrass,17,,FUL
