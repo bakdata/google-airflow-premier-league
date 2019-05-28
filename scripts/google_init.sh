@@ -31,7 +31,7 @@ read -p "Google Cloud Billing ACCOUNT_ID: " BILLING_ID && \
 
 #ORG_ID=711811781267 # gcloud organizations list
 #BILLING_ID=01FC04-43BC30-4AC293 #gcloud beta billing accounts list
-GC_PROJECT_ID=${USER}-premier-league-data
+GC_PROJECT_ID=${USER}-premier-league
 BQ_LOCATION="EU"
 LOCATION=europe-west1
 ZONE=europe-west1-b
