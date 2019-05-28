@@ -1,9 +1,9 @@
 import json
+import os
 from datetime import datetime, timedelta
 
 from airflow import DAG
 from airflow.contrib.sensors.gcs_sensor import GoogleCloudStoragePrefixSensor
-from airflow.models import Variable
 from airflow.operators.dagrun_operator import TriggerDagRunOperator
 
 from util.gc_tasks import gc_tasks
@@ -16,7 +16,7 @@ def create_dag(dag_id, entity, schema, default_args):
         wait_for_data = GoogleCloudStoragePrefixSensor(
             task_id=f"wait_for_{entity}_data",
             bucket="{{ var.value.gcs_bucket }}",
-            prefix=entity,
+            prefix=f"{entity}",
         )
 
         rerun_dag = TriggerDagRunOperator(
@@ -29,8 +29,8 @@ def create_dag(dag_id, entity, schema, default_args):
     return dag
 
 
-airflow_home = Variable.get("airflow_home")
-description = open(f'{airflow_home}/dags/description.json', 'r').read()
+dags_folder = os.getenv('DAGS_FOLDER', "./dags")
+description = open(f'{dags_folder}/description.json', 'r').read()
 for key, values in json.loads(description).items():
     default_args = {
         "owner": "bakdata",
