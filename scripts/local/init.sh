@@ -14,19 +14,4 @@ docker-compose run webserver airflow connections -a --conn_id=bigquery_default -
 docker-compose run --rm webserver airflow connections -d --conn_id=google_cloud_default && \
 docker-compose run --rm webserver airflow connections -a --conn_id=google_cloud_default --conn_type=google_cloud_platform --conn_extra "$CONNECTION_GOOGLE_EXTRAS"
 
-### create tables
-echo "create tables ..." && \
-jq '.matchweek.schema += .matchweek.ext_schema' ../../airflow/dags/description.json | jq -r '.matchweek.schema' > /tmp/matchweek.schema && \
-bq --location=${BQ_LOCATION} mk --table ${GC_PROJECT_ID}:warehouse.matchweek /tmp/matchweek.schema && rm /tmp/matchweek.schema && \
-
-jq '.scorer.schema += .scorer.ext_schema' ../../airflow/dags/description.json | jq -r '.scorer.schema' > /tmp/scorer.schema && \
-bq --location=${BQ_LOCATION} mk --table ${GC_PROJECT_ID}:warehouse.scorer /tmp/scorer.schema && rm /tmp/scorer.schema && \
-
-### create views
-echo "create views ..." && \
-bash ../create_sql.sh $GC_PROJECT_ID ../../bq/sql/matches.sql view.matches && \
-bash ../create_sql.sh $GC_PROJECT_ID ../../bq/sql/latest_result.sql view.latest_result && \
-bash ../create_sql.sh $GC_PROJECT_ID ../../bq/sql/league_table.sql view.league_table && \
-bash ../create_sql.sh $GC_PROJECT_ID ../../bq/sql/top_goal_scorers.sql view.top_goal_scorers
-
 popd >/dev/null 2>&1
