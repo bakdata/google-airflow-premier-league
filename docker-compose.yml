@@ -32,7 +32,7 @@ services:
       - ENABLE_REMOTE_LOGGING=False
       - STAGE=dev
     volumes:
-        - ./dags:/usr/local/airflow/dags
+        - ./airflow/dags:/usr/local/airflow/dags
     ports:
         - "8080:8080"
     command: webserver
@@ -67,7 +67,7 @@ services:
     depends_on:
       - webserver
     volumes:
-      - ./dags:/usr/local/airflow/dags
+      - ./airflow/dags:/usr/local/airflow/dags
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
@@ -89,7 +89,7 @@ services:
       - webserver
       - scheduler
     volumes:
-      - ./dags:/usr/local/airflow/dags
+      - ./airflow/dags:/usr/local/airflow/dags
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
