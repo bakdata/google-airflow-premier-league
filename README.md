@@ -7,6 +7,14 @@ The ETL job then starts automatically and imports the data into BigQuery to anal
 
 ## Requirements
  * [Google Cloud SDK](https://cloud.google.com/sdk/install)
+    * before start update components
+        ```
+        gcloud components update
+        ```
+    * Accessing a Cloud Composer environment requires the kubernetes commandline client [kubectl].
+        ```
+        gcloud components install kubectl
+        ```
  * [jq](https://stedolan.github.io/jq/) (a lightweight terminal application for json parsing and manipulation)
 
 ## [Google Deployment](https://cloud.google.com/composer/docs/quickstart)
