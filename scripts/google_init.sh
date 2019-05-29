@@ -25,6 +25,7 @@ gcloud beta billing accounts list && \
 read -p "Google Cloud Billing ACCOUNT_ID: " BILLING_ID && \
 
 ### set env variables
+export ORG_ID=${ORG_ID}
 export GC_PROJECT_ID=${USER}-premier-league
 BQ_LOCATION=EU
 LOCATION=europe-west1
