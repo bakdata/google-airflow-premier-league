@@ -11,12 +11,15 @@ if ! [ -x "$(command -v gcloud)" ]; then
   exit 1
 fi
 
-echo "update gcloud components ..." && \
-gcloud components update && \
+if ! [ -x "$(command -v jq)" ]; then
+  echo 'Error: jq is not installed. https://stedolan.github.io/jq/' >&2
+  exit 1
+fi
 
-### Accessing a Cloud Composer environment requires the kubernetes commandline client [kubectl].
-echo "install gcloud component: kubectl ..." && \
-gcloud components install kubectl && \
+if ! [ -x "$(command -v kubectl)" ]; then
+  echo 'Error: kubectl is not installed. Run `gcloud components install kubectl`' >&2
+  exit 1
+fi
 
 gcloud organizations list && \
 read -p "Google Cloud Organization ID: " ORG_ID && \
@@ -24,9 +27,12 @@ read -p "Google Cloud Organization ID: " ORG_ID && \
 gcloud beta billing accounts list && \
 read -p "Google Cloud Billing ACCOUNT_ID: " BILLING_ID && \
 
+uuid=$(uuidgen)
+uuid=${uuid:0:8}
+
 ### set env variables
 export ORG_ID=${ORG_ID}
-export GC_PROJECT_ID=${USER}-premier-league
+export GC_PROJECT_ID=premier-league-${uuid}
 export LOCATION=europe-west1
 BQ_LOCATION=EU
 ZONE=europe-west1-b
