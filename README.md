@@ -18,4 +18,4 @@ In the configuration of the [Environment](https://console.cloud.google.com/compo
 Run: `./scripts/google_upload_data.sh`
 
 ## Cleaning up
-run `gcloud projects delete [PROJECT_ID]`
+Run: `gcloud projects delete ${GC_PROJECT_ID}`
