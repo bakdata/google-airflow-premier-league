@@ -27,6 +27,25 @@ gcloud composer environments run ${GC_PROJECT_ID} \
 ### Upload Premier League Data
 After then upload the data to [Storage](https://console.cloud.google.com/storage), just run: `./scripts/google_upload_data.sh`
 
-
-## Cleaning up
+### Cleaning up
 Run: `gcloud projects delete ${GC_PROJECT_ID}`
+
+## Local Deployment
+Export the following variable to your environment
+```bash
+export GC_PROJECT_ID=[YOU_GC_PROJECT_ID]
+```
+ 
+Create key for [Service Account](https://console.cloud.google.com/iam-admin/serviceaccounts) 
+and store to `airflow/data/keyfile.json`.
+
+Just run: `docker-compose up`, then execute the `./scripts/local/init.sh` script to create variables and connections.
+
+Airflow will be available via http://localhost:8080
+
+## Development
+To set up a local development environment install pipenv: pip install pipenv
+
+Then install run SLUGIFY_USES_TEXT_UNIDECODE=yes pipenv install
+
+Open the folder with PyCharm and mark both dags/ and plugins/ as source folders

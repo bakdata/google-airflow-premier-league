@@ -1,7 +1,0 @@
-{
-  "bq_dataset_source": "staging",
-  "bq_dataset_target": "warehouse",
-  "bq_dataset_view": "view",
-  "gc_project_id": "'$GC_PROJECT_ID'",
-  "gcs_bucket": "'$GC_PROJECT_ID'"
-}

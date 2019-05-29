@@ -33,6 +33,7 @@ services:
       - STAGE=dev
     volumes:
         - ./airflow/dags:/usr/local/airflow/dags
+        - ./airflow/data/keyfile.json:/usr/local/airflow/data/keyfile.json
     ports:
         - "8080:8080"
     command: webserver
@@ -68,6 +69,7 @@ services:
       - webserver
     volumes:
       - ./airflow/dags:/usr/local/airflow/dags
+      - ./airflow/data/keyfile.json:/usr/local/airflow/data/keyfile.json
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
@@ -90,6 +92,7 @@ services:
       - scheduler
     volumes:
       - ./airflow/dags:/usr/local/airflow/dags
+      - ./airflow/data/keyfile.json:/usr/local/airflow/data/keyfile.json
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
