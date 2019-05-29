@@ -1,14 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ## Requirements
-# https://cloud.google.com/sdk/docs/quickstart-linux
-# curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-231.0.0-linux-x86_64.tar.gz
-# tar zxvf google-cloud-sdk-231.0.0-linux-x86_64.tar.gz google-cloud-sdk
-# ./google-cloud-sdk/install.sh
-# gcloud components update
-# new Shell ...
-### Accessing a Cloud Composer environment requires the kubernetes commandline client [kubectl].
-# gcloud components install kubectl
+# gcloud 	- https://cloud.google.com/sdk/docs/quickstart-linux
+# jq 		- https://stedolan.github.io/jq/; for MAC: brew install jq
 
 pushd $( dirname "${BASH_SOURCE[0]}" ) >/dev/null 2>&1
 
@@ -17,9 +11,10 @@ if ! [ -x "$(command -v gcloud)" ]; then
   exit 1
 fi
 
-# gcloud auth login && \
 echo "update gcloud components ..." && \
 gcloud components update && \
+
+### Accessing a Cloud Composer environment requires the kubernetes commandline client [kubectl].
 echo "install gcloud component: kubectl ..." && \
 gcloud components install kubectl && \
 
@@ -29,10 +24,9 @@ read -p "Google Cloud Organization ID: " ORG_ID && \
 gcloud beta billing accounts list && \
 read -p "Google Cloud Billing ACCOUNT_ID: " BILLING_ID && \
 
-#ORG_ID=711811781267 # gcloud organizations list
-#BILLING_ID=01FC04-43BC30-4AC293 #gcloud beta billing accounts list
-GC_PROJECT_ID=${USER}-premier-league
-BQ_LOCATION="EU"
+### set env variables
+export GC_PROJECT_ID=${USER}-premier-league
+BQ_LOCATION=EU
 LOCATION=europe-west1
 ZONE=europe-west1-b
 
@@ -56,11 +50,6 @@ gcloud services enable compute.googleapis.com && \
 gcloud services enable composer.googleapis.com && \
 gcloud services enable serviceusage.googleapis.com
 
-### prepare datasets
-#bq rm -rfd ${GC_PROJECT_ID}:staging && \
-#bq rm -rfd ${GC_PROJECT_ID}:warehouse && \
-#bq rm -rfd ${GC_PROJECT_ID}:view && \
-
 ### create datasets
 echo "create datasets ..." && \
 bq --location=$BQ_LOCATION mk --default_table_expiration 3600 --dataset ${GC_PROJECT_ID}:staging && \
@@ -77,17 +66,14 @@ bq --location=${BQ_LOCATION} mk --table ${GC_PROJECT_ID}:warehouse.scorer /tmp/s
 
 ### create views
 echo "create views ..." && \
-bash create_sql.sh $GC_PROJECT_ID ../data/view/matches.sql view.matches && \
-bash create_sql.sh $GC_PROJECT_ID ../data/view/latest_result.sql view.latest_result && \
-bash create_sql.sh $GC_PROJECT_ID ../data/view/league_table.sql view.league_table && \
-bash create_sql.sh $GC_PROJECT_ID ../data/view/top_goal_scorers.sql view.top_goal_scorers && \
+bash create_sql.sh $GC_PROJECT_ID ../bq/sql/matches.sql view.matches && \
+bash create_sql.sh $GC_PROJECT_ID ../bq/sql/latest_result.sql view.latest_result && \
+bash create_sql.sh $GC_PROJECT_ID ../bq/sql/league_table.sql view.league_table && \
+bash create_sql.sh $GC_PROJECT_ID ../bq/sql/top_goal_scorers.sql view.top_goal_scorers && \
 
 ### create bucket
 echo "create bucket ..." && \
-#gsutil -m rm -r gs://${GC_PROJECT_ID} && \
 gsutil mb -p ${GC_PROJECT_ID} -l ${BQ_LOCATION} -c multi_regional gs://${GC_PROJECT_ID}/ && \
-gsutil -m cp ../data/matchweek/* gs://${GC_PROJECT_ID} && \
-gsutil -m cp ../data/scorer/* gs://${GC_PROJECT_ID} && \
 
 ### create environment airflow
 echo "create airflow environment ..." && \
@@ -100,7 +86,7 @@ gcloud beta composer environments create ${GC_PROJECT_ID} \
 	--machine-type=n1-standard-1 \
 	--image-version=composer-1.7.0-airflow-1.10 && \
 
-### Airflow Connections
+### create Airflow connections
 echo "create airflow connections ..." && \
 gcloud composer environments run ${GC_PROJECT_ID} \
 	 --location ${LOCATION} connections -- --delete \
@@ -120,7 +106,7 @@ gcloud composer environments run ${GC_PROJECT_ID} \
 	 --conn_id=google_cloud_default --conn_type=google_cloud_platform \
 	 --conn_extra '{"extra__google_cloud_platform__project": "'${GC_PROJECT_ID}'", "extra__google_cloud_platform__key_path": "/home/airflow/gcs/dags/keyfile.json", "extra__google_cloud_platform__scope": "https://www.googleapis.com/auth/cloud-platform"}' && \
 
-### Airflow Variables
+### create Airflow variables
 echo "create airflow variables ..." && \
 echo '{
 		"bq_dataset_source": "staging", 
@@ -155,7 +141,7 @@ gcloud composer environments storage dags import \
     --location ${LOCATION} \
     --source /tmp/keyfile.json && rm /tmp/keyfile.json && \
 
-### Airflow deploy DAG's
+### deploy Airflow DAG's
 echo "deploy airflow DAG's" && \
 BUCKET_NAME=$(gcloud composer environments describe ${GC_PROJECT_ID} --location ${LOCATION} --format="get(config.dagGcsPrefix)")
 BUCKET_NAME=${BUCKET_NAME%dags}
@@ -163,15 +149,5 @@ BUCKET_NAME=${BUCKET_NAME%dags}
 bash google_deploy.sh && \
 
 gsutil -m cp -r ../google_deploy/* ${BUCKET_NAME} 
-
-#### Airflow trigger DAG's
-#gcloud composer environments run ${GC_PROJECT_ID} \
-#	 --location ${LOCATION} trigger_dag -- matchweek_data_to_gc && \
-#
-#gcloud composer environments run ${GC_PROJECT_ID} \
-#	 --location ${LOCATION} list_dag_runs -- scorer_data_to_gc
-
-### detroy project
-#gcloud projects delete ${GC_PROJECT_ID}
 
 popd >/dev/null 2>&1
