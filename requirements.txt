@@ -1,3 +1,0 @@
-google-api-core
-google-api-python-client
-pandas_gbq

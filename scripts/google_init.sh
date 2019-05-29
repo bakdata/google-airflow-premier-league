@@ -27,8 +27,8 @@ read -p "Google Cloud Billing ACCOUNT_ID: " BILLING_ID && \
 ### set env variables
 export ORG_ID=${ORG_ID}
 export GC_PROJECT_ID=${USER}-premier-league
+export LOCATION=europe-west1
 BQ_LOCATION=EU
-LOCATION=europe-west1
 ZONE=europe-west1-b
 
 ### create project
@@ -59,10 +59,10 @@ bq --location=$BQ_LOCATION mk --dataset ${GC_PROJECT_ID}:view  && \
 
 ### create tables
 echo "create tables ..." && \
-jq '.matchweek.schema += .matchweek.ext_schema' ../dags/description.json | jq -r '.matchweek.schema' > /tmp/matchweek.schema && \
+jq '.matchweek.schema += .matchweek.ext_schema' ../airflow/dags/description.json | jq -r '.matchweek.schema' > /tmp/matchweek.schema && \
 bq --location=${BQ_LOCATION} mk --table ${GC_PROJECT_ID}:warehouse.matchweek /tmp/matchweek.schema && rm /tmp/matchweek.schema && \
 
-jq '.scorer.schema += .scorer.ext_schema' ../dags/description.json | jq -r '.scorer.schema' > /tmp/scorer.schema && \
+jq '.scorer.schema += .scorer.ext_schema' ../airflow/dags/description.json | jq -r '.scorer.schema' > /tmp/scorer.schema && \
 bq --location=${BQ_LOCATION} mk --table ${GC_PROJECT_ID}:warehouse.scorer /tmp/scorer.schema && rm /tmp/scorer.schema && \
 
 ### create views

@@ -28,7 +28,5 @@ __pycache__
 venv
 .idea
 
-postgres_data/
 google_deploy/
-infrastructure/.terraform*
-infrastructure/*.tfstate
+airflow/data/*
