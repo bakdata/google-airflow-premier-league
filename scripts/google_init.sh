@@ -22,7 +22,7 @@ if ! [ -x "$(command -v kubectl)" ]; then
 fi
 
 gcloud organizations list && \
-read -p "Google Cloud Organization ID: " ORG_ID && \
+read -p "Google Cloud Organization ID (leave empty to create project without organization): " ORG_ID && \
 
 gcloud beta billing accounts list && \
 read -p "Google Cloud Billing ACCOUNT_ID: " BILLING_ID && \
@@ -37,10 +37,15 @@ BQ_LOCATION=EU
 ZONE=europe-west1-b
 
 ### create project
-echo "create project ..." && \
-gcloud projects create ${GC_PROJECT_ID} \
-  --organization ${ORG_ID} \
-  --set-as-default && \
+echo "create project ..."
+if [-z '$ORG_ID']; then
+  gcloud projects create ${GC_PROJECT_ID} \
+    --set-as-default
+else
+  gcloud projects create ${GC_PROJECT_ID} \
+    --organization ${ORG_ID} \
+    --set-as-default
+fi
 
 gcloud beta billing projects link ${GC_PROJECT_ID} \
   --billing-account ${BILLING_ID} && \
