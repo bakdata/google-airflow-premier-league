@@ -38,7 +38,7 @@ ZONE=europe-west1-b
 
 ### create project
 echo "create project ..."
-if [-z '$ORG_ID']; then
+if [[ -z '$ORG_ID' ]]; then
   gcloud projects create ${GC_PROJECT_ID} \
     --set-as-default
 else
