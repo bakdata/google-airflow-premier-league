@@ -27,8 +27,7 @@ read -p "Google Cloud Organization ID: " ORG_ID && \
 gcloud beta billing accounts list && \
 read -p "Google Cloud Billing ACCOUNT_ID: " BILLING_ID && \
 
-uuid=$(uuidgen)
-uuid=${uuid:0:8}
+uuid=$(python -c "import uuid; print(str(uuid.uuid4())[:8].lower())")
 
 ### set env variables
 export ORG_ID=${ORG_ID}
