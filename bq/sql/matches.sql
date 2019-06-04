@@ -13,3 +13,4 @@ SELECT
   week, date, match, home_team_code, 0, 0, away_team_code
 FROM `$GC_PROJECT_ID.warehouse.matchweek`
 WHERE match NOT IN (SELECT match FROM `$GC_PROJECT_ID.warehouse.scorer`)
+ORDER BY date DESC
