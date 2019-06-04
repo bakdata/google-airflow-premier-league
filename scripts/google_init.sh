@@ -159,6 +159,8 @@ BUCKET_NAME=${BUCKET_NAME%dags}
 
 bash google_deploy.sh && \
 
-gsutil -m cp -r ../google_deploy/* ${BUCKET_NAME} 
+gsutil -m cp -r ../google_deploy/* ${BUCKET_NAME}
+
+echo "your premium league environment is now ready and its project id is: ${GC_PROJECT_ID}"
 
 popd >/dev/null 2>&1
