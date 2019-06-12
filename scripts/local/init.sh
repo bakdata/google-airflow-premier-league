@@ -2,6 +2,8 @@
 
 pushd $( dirname "${BASH_SOURCE[0]}" ) >/dev/null 2>&1
 
+read -p "please enter your project id: " GC_PROJECT_ID
+
 CONNECTION_GOOGLE_EXTRAS='{"extra__google_cloud_platform__project": "'$GC_PROJECT_ID'", "extra__google_cloud_platform__key_path": "/usr/local/airflow/data/keyfile.json"}'
 
 docker-compose run --rm webserver airflow variables -s bq_dataset_source staging  && \
