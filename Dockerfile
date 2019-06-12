@@ -82,7 +82,7 @@ RUN set -ex \
         /usr/share/doc \
         /usr/share/doc-base
 
-COPY config/entrypoint.sh /entrypoint.sh
+COPY airflow/config/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 RUN chown -R airflow: ${AIRFLOW_HOME}
@@ -92,14 +92,14 @@ USER airflow
 COPY requirements.txt .
 RUN pip install --user -r requirements.txt
 
-COPY config/airflow.cfg ${AIRFLOW_HOME}/airflow.cfg
+COPY airflow/config/airflow.cfg ${AIRFLOW_HOME}/airflow.cfg
 
-COPY dags ${AIRFLOW_HOME}/dags
-COPY plugins ${AIRFLOW_HOME}/plugins
+COPY airflow/dags ${AIRFLOW_HOME}/dags
+COPY airflow/plugins ${AIRFLOW_HOME}/plugins
 
 ENV PYTHONPATH ${AIRFLOW_HOME}
 
 EXPOSE 8080 5555 8793
 
 WORKDIR ${AIRFLOW_HOME}
-ENTRYPOINT ["airflow/config/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
