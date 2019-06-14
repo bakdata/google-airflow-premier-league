@@ -81,6 +81,7 @@ bash create_sql.sh $GC_PROJECT_ID ../bq/sql/matches.sql view.matches && \
 bash create_sql.sh $GC_PROJECT_ID ../bq/sql/latest_result.sql view.latest_result && \
 bash create_sql.sh $GC_PROJECT_ID ../bq/sql/league_table.sql view.league_table && \
 bash create_sql.sh $GC_PROJECT_ID ../bq/sql/top_goal_scorers.sql view.top_goal_scorers && \
+bash create_sql.sh $GC_PROJECT_ID ../bq/sql/goals_per_day.sql view.goals_per_day && \
 
 ### create bucket
 echo "create bucket ..." && \
