@@ -1,4 +1,5 @@
 week,date,match,player,minute,extra_minute,scorer_team
+16,2018-12-08,WHUCRY,McArthur,6,,CRY
 16,2018-12-08,MUNFUL,Young,13,,MUN
 16,2018-12-08,BOULIV,Salah,25,,LIV
 16,2018-12-08,MUNFUL,Mata,28,,MUN
@@ -9,7 +10,6 @@ week,date,match,player,minute,extra_minute,scorer_team
 16,2018-12-08,BOULIV,Salah,48,,LIV
 16,2018-12-08,WHUCRY,Snodgrass,48,,WHU
 16,2018-12-08,LEITOT,Alli,58,,TOT
-16,2018-12-08,WHUCRY,McArthur,6,,CRY
 16,2018-12-08,WHUCRY,Chicharito,62,,WHU
 16,2018-12-08,WHUCRY,F.Anderson,65,,WHU
 16,2018-12-08,MUNFUL,Kamara,67,,FUL
@@ -26,3 +26,4 @@ week,date,match,player,minute,extra_minute,scorer_team
 16,2018-12-10,EVEWAT,Richarlison,15,,EVE
 16,2018-12-10,EVEWAT,Coleman,63,,WAT
 16,2018-12-10,EVEWAT,Doucouré,65,,WAT
+16,2018-12-10,EVEWAT,Digne,90,6,EVE

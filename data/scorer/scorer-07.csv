@@ -1,11 +1,11 @@
 week,date,match,player,minute,extra_minute,scorer_team
+7,2018-09-29,WHUMUN,Anderson,5,,WHU
 7,2018-09-29,CHELIV,Hazard,25,,CHE
 7,2018-09-29,HUDTOT,Kane,25,,TOT
 7,2018-09-29,MCIBHA,Sterling,29,,MCI
 7,2018-09-29,NEWLEI,Vardy,30,,LEI
 7,2018-09-29,HUDTOT,Kane,34,,TOT
 7,2018-09-29,WHUMUN,Lindelöf,43,,WHU
-7,2018-09-29,WHUMUN,Anderson,5,,WHU
 7,2018-09-29,EVEFUL,Sigurðsson,56,,EVE
 7,2018-09-29,MCIBHA,Agüero,65,,MCI
 7,2018-09-29,EVEFUL,Tosun,66,,EVE
@@ -22,5 +22,5 @@ week,date,match,player,minute,extra_minute,scorer_team
 7,2018-09-30,CARBUR,Murphy,60,,CAR
 7,2018-09-30,CARBUR,Vokes,70,,BUR
 7,2018-10-01,BOUCRY,Brooks,5,,BOU
-7,2018-10-01,BOUCRY,Stanislas,87,,BOU
 7,2018-10-01,BOUCRY,van Aanholt,55,,CRY
+7,2018-10-01,BOUCRY,Stanislas,87,,BOU

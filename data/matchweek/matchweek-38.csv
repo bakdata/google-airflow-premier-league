@@ -1,0 +1,11 @@
+week,date,local_time,home_team,home_team_code,away_team,away_team_code,match,attendance
+38,2019-05-12,15:00:00,Burnley,BUR,Arsenal,ARS,BURARS,21461
+38,2019-05-12,15:00:00,Leicester City,LEI,Chelsea,CHE,LEICHE,32140
+38,2019-05-12,15:00:00,Southampton,SOU,Huddersfield Town,HUD,SOUHUD,30367
+38,2019-05-12,15:00:00,Crystal Palace,CRY,Bournemouth,BOU,CRYBOU,25433
+38,2019-05-12,15:00:00,Liverpool,LIV,Wolverhampton Wanderers,WOL,LIVWOL,53331
+38,2019-05-12,15:00:00,Tottenham Hotspur,TOT,Everton,EVE,TOTEVE,60124
+38,2019-05-12,15:00:00,Brighton and Hove Albion,BHA,Manchester City,MCI,BHAMCI,30662
+38,2019-05-12,15:00:00,Fulham,FUL,Newcastle United,NEW,FULNEW,24979
+38,2019-05-12,15:00:00,Manchester United,MUN,Cardiff City,CAR,MUNCAR,74457
+38,2019-05-12,15:00:00,Watford,WAT,West Ham United,WHU,WATWHU,20067
