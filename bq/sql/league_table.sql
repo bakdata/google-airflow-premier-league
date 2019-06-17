@@ -17,9 +17,14 @@ SELECT away_team AS team,
   SUM(home_goals) AS goals_against,
   COUNT(DISTINCT match) AS played
 FROM `$GC_PROJECT_ID.view.matches` GROUP BY 1
-)
+), teams AS (
+SELECT DISTINCT team_name, team_code FROM (
+SELECT home_team as team_name, home_team_code as team_code FROM `$GC_PROJECT_ID.warehouse.matchweek`
+UNION ALL
+SELECT away_team as team_name, away_team_code as team_code FROM `$GC_PROJECT_ID.warehouse.matchweek`
+))
 SELECT 
-  team,
+  team_name,
   SUM(played) AS played, 
   SUM(wins) AS wins, 
   SUM(draws) AS draws, 
@@ -28,4 +33,5 @@ SELECT
   SUM(goals_against) AS goals_against,
   SUM(goals_for) - SUM(goals_against) AS goals_diff,
   SUM(pts) AS pts 
-FROM points GROUP BY 1 ORDER BY 9 DESC
+FROM points JOIN teams on team = team_code
+GROUP BY 1 ORDER BY 9 DESC, 8 DESC
