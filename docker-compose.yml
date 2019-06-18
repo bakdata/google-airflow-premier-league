@@ -13,7 +13,7 @@ services:
       - POSTGRES_DB=airflow
 
   webserver:
-    image: airflow:1.10.3
+    image: airflow:v1-10-stable
     restart: always
     build: .
     depends_on:
@@ -44,7 +44,7 @@ services:
       retries: 3
 
   flower:
-    image: airflow:1.10.3
+    image: airflow:v1-10-stable
     restart: always
     depends_on:
       - redis
@@ -63,7 +63,7 @@ services:
     command: flower
 
   scheduler:
-    image: airflow:1.10.3
+    image: airflow:v1-10-stable
     restart: always
     depends_on:
       - webserver
@@ -85,7 +85,7 @@ services:
     command: scheduler
 
   worker:
-    image: airflow:1.10.3
+    image: airflow:v1-10-stable
     restart: always
     depends_on:
       - webserver

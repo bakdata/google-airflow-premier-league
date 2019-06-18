@@ -1,6 +1,5 @@
 google-api-core
+google-cloud-storage
 google-api-python-client
 pandas_gbq
 
-SQLAlchemy >=1.3.0
-Jinja2 >=2.10.1
