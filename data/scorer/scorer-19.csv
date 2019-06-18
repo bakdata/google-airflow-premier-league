@@ -1,10 +1,11 @@
 week,date,match,player,minute,extra_minute,scorer_team
+19,2018-12-26,BUREVE,Mina,2,,EVE
+19,2018-12-26,BHAARS,Aubameyang,7,,BHA
 19,2018-12-26,LIVNEW,Lovren,11,,LIV
 19,2018-12-26,BUREVE,Digne,13,,EVE
 19,2018-12-26,LEIMCI,B.Silva,14,,MCI
 19,2018-12-26,TOTBOU,Eriksen,16,,TOT
 19,2018-12-26,LEIMCI,Albrighton,19,,LEI
-19,2018-12-26,BUREVE,Mina,2,,EVE
 19,2018-12-26,BUREVE,Sigurðsson,22,,EVE
 19,2018-12-26,TOTBOU,Son,23,,TOT
 19,2018-12-26,MUNHUD,Matić,28,,MUN
@@ -17,7 +18,6 @@ week,date,match,player,minute,extra_minute,scorer_team
 19,2018-12-26,WATCHE,Hazard,58,,CHE
 19,2018-12-26,TOTBOU,Kane,61,,TOT
 19,2018-12-26,MUNHUD,Pogba,64,,MUN
-19,2018-12-26,BHAARS,Aubameyang,7,,BHA
 19,2018-12-26,TOTBOU,Son,70,,TOT
 19,2018-12-26,BUREVE,Digne,71,,EVE
 19,2018-12-26,FULWOL,Sessegnon,74,,FUL

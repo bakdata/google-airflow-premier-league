@@ -1,7 +1,9 @@
 week,date,match,player,minute,extra_minute,scorer_team
+27,2019-02-06,EVEMCI,Laporte,45,2,MCI
+27,2019-02-06,EVEMCI,Jesus,90,7,MCI
+27,2019-02-22,WHUFUL,Babel,3,,FUL
 27,2019-02-22,CARWAT,Deulofeu,18,,WAT
 27,2019-02-22,WHUFUL,Chicharito,29,,WHU
-27,2019-02-22,WHUFUL,Babel,3,,FUL
 27,2019-02-22,WHUFUL,Diop,40,,WHU
 27,2019-02-22,CARWAT,Deulofeu,61,,WAT
 27,2019-02-22,CARWAT,Deulofeu,63,,WAT
@@ -21,5 +23,8 @@ week,date,match,player,minute,extra_minute,scorer_team
 27,2019-02-23,BURTOT,Barnes,83,,BUR
 27,2019-02-23,BOUWOL,Jiménez,83,,WOL
 27,2019-02-23,LEICRY,Zaha,90,3,CRY
-27,2019-02-24,LEICRY,Mkhitaryan,17,,ARS
-27,2019-02-24,LEICRY,Lacazette,6,,ARS
+27,2019-02-24,ARSSOU,Lacazette,6,,ARS
+27,2019-02-24,ARSSOU,Mkhitaryan,17,,ARS
+27,2019-04-03,CHEBHA,Giroud,38,,CHE
+27,2019-04-03,CHEBHA,Hazard,60,,CHE
+27,2019-04-03,CHEBHA,Loftus-Cheek,63,,CHE
