@@ -11,7 +11,7 @@ ENV TERM linux
 
 # Airflow
 # it's possible to use v1-10-stable, but it's a development branch
-ARG AIRFLOW_VERSION=1.10.3
+ARG AIRFLOW_VERSION=v1-10-stable
 ENV AIRFLOW_HOME=/usr/local/airflow
 ENV AIRFLOW_GPL_UNIDECODE=yes
 # celery config
